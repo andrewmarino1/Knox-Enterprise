@@ -1,1 +1,38 @@
-#
+html, body {
+	margin: 0;
+	padding: 0;
+	background-color:#E0E0E0;
+}
+/*Knox Header*/
+h1 {
+font-family: sans-seriff;
+color: white;
+background-color: #606060;
+font-size: 60px;
+text-align: center;
+text-transform: uppercase;
+border-bottom: 5px solid orange;
+border-top: 5px solid orange;
+position: static;
+}
+/*Nav Menu*/
+.nav {
+	background-color:#606060;
+	overflow: hidden;
+	}
+.nav a {
+	font-family: arial;
+	float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    position: static;
+    }
+.nav a:hover {
+	background-color: #ddd;
+    color: black;
+    }
+
+
