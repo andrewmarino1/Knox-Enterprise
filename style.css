@@ -1,112 +1,113 @@
-html, body {
-	margin: 0;
-	padding: 0;
-	background-image:url("backround.jpg");
-	background-repeat: no-repeat;
-}
-/*Knox Header*/
-h1 {
-position: fixed;
-top: -40px;
-width: 100%;
-font-family: Georgia;
-color: white;
-text-shadow: 4px 4px black;
-background-image: url("header.jpg");
-font-size: 60px;
-text-align: center;
-text-transform: uppercase;
-border-bottom: 5px solid orange;
-border-top: 5px solid orange;
-}
-/*Nav Menu/Home Page*/
-.nav {
-	position:fixed;
-	padding-top:78px;
-	background-image:#606060;
-	overflow: hidden;
-	}
-.nav a {
-	font-family: Helvetica;
-	background-color:black;
-	float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 10px 12px;
-    text-decoration: none;
-    font-size: 12px;
-    border-right: 2px solid orange;
-    border-bottom: 2px solid orange;
-    letter-spacing: 2px;
-    }
-.nav a:hover {
-	background-color: #ddd;
-    color: black;
-    }
-.home {
-	text-align:center;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	}
-.home-pictures, .home-pictures2{
-	height:auto;
-	width:auto;
-	display: inline-block;
-	margin-left: auto;
-	margin-right: auto;
-}
-.home img {
-	border: 1px solid white;
-	}
-.home-description {
-	line-height: 0px;
-	color: white;
-	letter-spacing: 2px;
-	font-family: Helvetica;
-	font-size: 18px;
-	}
-/*About Page*/
-.about, .about-description {
-	text-align: center;
-	color: white;
-	font-family: helvetica;
-	letter-spacing: 2px;
-	}
-.about-description {
-	padding-top:100px;
-}
-.about-description p {
-	font-family: helvetica;
-	letter-spacing: 2px;
-	margin:0 auto;
-	width: 40%;
-	color:white;
-}
-.about img {
-	position: relative;
-	top: 80px;
-	margin-left:0 auto;
-	margin-right:0 auto;
-	padding-top: 30px;
-	padding-bottom: 30px;
-	transform: rotate(90deg);
-}
-#last{
-	padding-bottom: 40px;
-}
-.contact {
-	text-align:center;
-	padding-top:125px;
-	color:white;
-	font-family: helvetica; 
-	letter-spacing: 2px;
-}
-#phone-contact img{
-	border-radius:100%;
-}
-#email-contact img{
-	border-radius: 30%;
-}
-.adjust{
-	padding-top: 120px;
-}
+		html, body {
+			margin: 0;
+			padding: 0;
+			background-image:url("backround.jpg");
+			background-repeat: repeat-y;
+		}
+		header {
+			height: 220px;
+		}
+		/*Knox Header*/
+		h1 {
+			position: fixed;
+			top: -40px;
+			width: 100%;
+			font-family: Georgia;
+			color: white;
+			text-shadow: 4px 4px black;
+			background-image: url("header.jpg");
+			font-size: 60px;
+			text-align: center;
+			text-transform: uppercase;
+			border-bottom: 5px solid orange;
+			border-top: 5px solid orange;
+		}
+		/*Nav Menu/Home Page*/
+		.nav {
+			position: fixed;
+			top: 78px;
+			background-image:#606060;
+			overflow: hidden;
+			}
+		.nav a {
+			font-family: Helvetica;
+			background-color:black;
+			float: left;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 10px 12px;
+			text-decoration: none;
+			font-size: 12px;
+			border-right: 2px solid orange;
+			border-bottom: 2px solid orange;
+			border-top: 2px solid orange;
+			letter-spacing: 2px;
+			}
+		.nav a:hover {
+			background-color: #ddd;
+			color: black;
+			}
+		.home {
+			text-align:center;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			}
+		.home-pictures, .home-pictures2{
+			height:auto;
+			width:auto;
+			display: inline-block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.home img {
+			border: 1px solid white;
+			}
+		.home-description {
+			line-height: 0px;
+			color: white;
+			letter-spacing: 2px;
+			font-family: Helvetica;
+			font-size: 18px;
+			}
+		/*About Page*/
+		.about, .about-description {
+			text-align: center;
+			color: white;
+			font-family: helvetica;
+			letter-spacing: 2px;
+			}
+		.about-description {
+			padding-top:100px;
+		}
+		.about-description p {
+			font-family: helvetica;
+			letter-spacing: 2px;
+			margin:0 auto;
+			width: 40%;
+			color:white;
+		}
+		.about img {
+			position: relative;
+			top: 80px;
+			margin-left:0 auto;
+			margin-right:0 auto;
+			padding-top: 30px;
+			padding-bottom: 30px;
+			transform: rotate(90deg);
+		}
+		#last{
+			padding-bottom: 40px;
+		}
+		.contact {
+			text-align:center;
+			padding-top:125px;
+			color:white;
+			font-family: helvetica; 
+			letter-spacing: 2px;
+		}
+		#phone-contact img{
+			border-radius:100%;
+		}
+		#email-contact img{
+			border-radius: 30%;
+		}
