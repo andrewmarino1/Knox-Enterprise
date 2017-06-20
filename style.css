@@ -7,6 +7,12 @@
 		header {
 			height: 220px;
 		}
+		#about-header{
+			height: 100px;
+		}
+		#contact-header{
+			height: 100px;
+		}
 		/*Knox Header*/
 		h1 {
 			position: fixed;
@@ -21,6 +27,7 @@
 			text-transform: uppercase;
 			border-bottom: 5px solid orange;
 			border-top: 5px solid orange;
+			z-index: 1;
 		}
 		/*Nav Menu/Home Page*/
 		.nav {
