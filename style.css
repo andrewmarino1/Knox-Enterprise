@@ -4,35 +4,41 @@
 			background-image:url("backround.jpg");
 			background-repeat: repeat-y;
 		}
-		header {
-			height: 220px;
-		}
-		#about-header{
-			height: 100px;
-		}
-		#contact-header{
-			height: 100px;
-		}
-		/*Knox Header*/
-		h1 {
+		#about-header, #contact-header {
 			position: fixed;
-			top: -40px;
 			width: 100%;
 			font-family: Georgia;
 			color: white;
-			text-shadow: 4px 4px black;
+			text-shadow: 2px 2px black;
 			background-image: url("header.jpg");
-			font-size: 60px;
+			font-size: 1.0em;
 			text-align: center;
 			text-transform: uppercase;
 			border-bottom: 5px solid orange;
 			border-top: 5px solid orange;
 			z-index: 1;
 		}
+		#home-header {
+			position: fixed;
+			width: 100%;
+			font-family: Georgia;
+			color: white;
+			text-shadow: 2px 2px black;
+			background-image: url("header.jpg");
+			font-size: 1.0em;
+			text-align: center;
+			text-transform: uppercase;
+			border-bottom: 5px solid orange;
+			border-top: 5px solid orange;
+			z-index: 1;
+		}
+		.content {
+			padding-top: 120px;
+		}
 		/*Nav Menu/Home Page*/
 		.nav {
 			position: fixed;
-			top: 78px;
+			top: 86px;
 			background-image:#606060;
 			overflow: hidden;
 			}
