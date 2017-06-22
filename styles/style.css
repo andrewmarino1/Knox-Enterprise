@@ -7,37 +7,36 @@ html, body {
 }
 /*Nav Menu/Home Page*/
 
-header {
-	display: flex;
+.top-header {
 	position: fixed;
-	justify-content: center;
-	align-items: center;
 	width: 100%;
 	background-image: url("header.jpg");
 	background-position: center;
 	z-index: 1;
 	text-transform: uppercase;
-	border-bottom: 5px solid orange;
-	border-top: 5px solid orange;
-	text-shadow: 2px 2px black;
+	border-bottom: 5px solid #ff8000;
+	border-top: 5px solid #ff8000;
+	text-shadow: 2px 2px #000;
 }
 
 header h2 {
 	font-family: Georgia;
 	font-size: 1.6em;
-	color: white;
-	text-shadow: 3px 3px black;
+	color: #fff;
+	text-shadow: 3px 3px #000;
+	position: relative;
 }
 
 nav {
 	padding: 1%;
 	overflow: hidden;
+	float: left;
 }
 
 nav a {
 	float: left;
 	display: block;
-	color: orange;
+	color: #ff8000;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
@@ -51,23 +50,23 @@ nav li, nav ul{
 }
 
 nav a:hover {
-	background-color: lavander;
-	color: orange;
+	background-color: #fff;
+	color: #ff8000;
 }
 
 nav .material-icons {
-	padding-bottom: 5px;
+	padding-top: 12px;
 	display: none;
 	font-size: 36px;
-	color: orange;
+	color: #ff8000;
 }
 
 @media screen and (max-width: 600px) {
-  nav a:not(:first-child) {display: none;}
-  nav .material-icons {
+nav a:not(:first-child) {display: none;}
+nav .material-icons {
 	float: left;
 	display: block;
-  }
+}
 }
 
 /*Home Page pictures*/
@@ -113,27 +112,31 @@ nav .material-icons {
 	right: 0;
 	background: rgba(20,20,20,0.65);
 	text-align: center;
-	color: white;
+	color: #fff;
 	padding: 8px;
 	font-family: helvetica;
 	letter-spacing: 2px;
 	opacity: 0;
 	-webkit-transition: all 0.6s ease;
+	-moz-transition: all 0.6s ease;
+	-o-transition: all 0.6s ease;
+	-ms-transition: all 0.6s ease;
+	transition: all 0.6s ease;
 }
 
-figure:hover figcaption {
+.home figure:hover figcaption {
 	opacity:1;
 	transform:translateY(-100%);
 }
 
 .home img {
-	border: 1px solid white;
+	border: 1px solid #fff;
 }
 
 .home-description, .home-description li {
 	list-style: none;
 	line-height: 0px;
-	color: white;
+	color: #fff;
 	letter-spacing: 2px;
 	font-family: Helvetica;
 	font-size: 18px;
@@ -142,7 +145,7 @@ figure:hover figcaption {
 /*About Page*/
 .about, .about-description {
 	text-align: center;
-	color: white;
+	color: #fff;
 	font-family: helvetica;
 	letter-spacing: 2px;
 }
@@ -158,7 +161,7 @@ figure:hover figcaption {
 	letter-spacing: 2px;
 	margin:0 auto;
 	width: 40%;
-	color:white;
+	color:#fff;
 }
 
 .about img {
@@ -178,7 +181,7 @@ figure:hover figcaption {
 .contact {
 	text-align:center;
 	padding-top:125px;
-	color:white;
+	color:#fff;
 	font-family: helvetica; 
 	letter-spacing: 2px;
 }
