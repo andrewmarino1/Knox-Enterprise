@@ -1,0 +1,30 @@
+{
+  "name": "knox",
+  "version": "1.0.0",
+  "description": "knox website",
+  "main": "index.js",
+  "dependencies": {
+    "clear": "0.0.1",
+    "express": "4.15.3",
+    "hapi": "16.4.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewmarino1/Knox-Enterprise.git"
+  },
+  "keywords": [
+    "node",
+    "npm",
+    "knox"
+  ],
+  "author": "Andrew Marino <Andrew.m.marino@gmail.com>",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/andrewmarino1/Knox-Enterprise/issues"
+  },
+  "homepage": "https://github.com/andrewmarino1/Knox-Enterprise#readme"
+}
