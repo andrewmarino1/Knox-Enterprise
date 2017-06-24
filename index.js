@@ -1,7 +1,8 @@
+'use strict';
+
 const Path = require('path');
 const Hapi = require('hapi');
-const Inert = require('inert');
- 
+
 const server = new Hapi.Server({
     connections: {
         routes: {
@@ -11,27 +12,29 @@ const server = new Hapi.Server({
         }
     }
 });
-server.connection({ port: 3000 });
- 
-server.register(Inert, () => {});
- 
-server.route({
-    method: 'GET',
-    path: '/knox/index.html',
-    handler: {
-        directory: {
-            path: '.',
-            redirectToSlash: true,
-            index: true
-        }
-    }
-});
- 
-server.start((err) => {
- 
+
+server.connection({ port: 3000, host: 'localhost' });
+
+server.register(require('inert'), (err) => {
+
     if (err) {
         throw err;
     }
- 
-    console.log('Server running at:', server.info.uri);
+
+    server.route({
+        method: 'GET',
+        path: '/index.html',
+        handler: function (request, reply) {
+            reply.file('/index.html');
+        }
+    });
+
+    server.start((err) => {
+
+        if (err) {
+            throw err;
+        }
+
+        console.log('Server running at:', server.info.uri);
+    });
 });
