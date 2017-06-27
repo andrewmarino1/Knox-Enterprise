@@ -4,9 +4,10 @@
   "description": "knox website",
   "main": "index.js",
   "dependencies": {
-    "clear": "0.0.1",
-    "express": "4.15.3",
-    "hapi": "16.4.3"
+    "handlebars": "4.0.10",
+    "hapi": "16.4.3",
+    "inert": "4.2.0",
+    "vision": "4.1.1"
   },
   "devDependencies": {},
   "scripts": {
